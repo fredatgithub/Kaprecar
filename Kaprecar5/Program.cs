@@ -14,10 +14,11 @@ namespace Kaprekar5
       {
         // Vérifie que les 4 chiffres sont tous différents
         if (!AllDigitsUnique(n))
+        {
           continue;
+        }
 
-        int steps;
-        int constant = GetKaprekarConstant(n, out steps);
+        int constant = GetKaprekarConstant(n, out int steps);
         Console.WriteLine($"{n:D5}   | {constant}     | {steps}");
       }
 
