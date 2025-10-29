@@ -10,7 +10,7 @@ namespace Kaprekar5
       Console.WriteLine("Nombre  | Constante | Étapes");
       Console.WriteLine("-----------------------------");
 
-      for (int n = 10000; n <= 99999; n++)
+      for (int n = 12_345; n <= 98_765; n++)
       {
         // Vérifie que les 4 chiffres sont tous différents
         if (!AllDigitsUnique(n))
@@ -38,25 +38,25 @@ namespace Kaprekar5
     /// <summary>
     /// Calcule la constante de Kaprekar et le nombre d’itérations nécessaires.
     /// </summary>
-    static int GetKaprekarConstant(int n, out int steps)
+    static int GetKaprekarConstant(int number, out int steps)
     {
       steps = 0;
       int previous = -1;
 
-      while (n != previous)
+      while (number != previous)
       {
-        previous = n;
-        n = KaprekarStep(n);
+        previous = number;
+        number = KaprekarStep(number);
         steps++;
 
         // Si le résultat reste identique (la constante est atteinte)
-        if (n == previous)
+        if (number == previous)
         {
           break;
         }
       }
 
-      return n;
+      return number;
     }
 
     /// <summary>
