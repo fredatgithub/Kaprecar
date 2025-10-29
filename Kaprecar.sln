@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaprekarConstant", "Kapreka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaprecar5", "Kaprecar5\Kaprecar5.csproj", "{7CE7D316-1F10-4464-8FD6-260C09FABEF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaprecar51", "Kaprecar51\Kaprecar51.csproj", "{46BE047A-EB68-4819-A915-A3F8A77152FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7CE7D316-1F10-4464-8FD6-260C09FABEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE7D316-1F10-4464-8FD6-260C09FABEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE7D316-1F10-4464-8FD6-260C09FABEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BE047A-EB68-4819-A915-A3F8A77152FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BE047A-EB68-4819-A915-A3F8A77152FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BE047A-EB68-4819-A915-A3F8A77152FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BE047A-EB68-4819-A915-A3F8A77152FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
