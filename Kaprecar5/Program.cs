@@ -63,9 +63,9 @@ namespace Kaprekar5
     /// Réalise une étape du processus de Kaprekar :
     /// trie les chiffres en ordre décroissant et croissant, puis soustrait.
     /// </summary>
-    static int KaprekarStep(int n)
+    static int KaprekarStep(int number)
     {
-      string digits = n.ToString("D5");
+      string digits = number.ToString("D5");
       int high = int.Parse(String.Concat(digits.OrderByDescending(c => c)));
       int low = int.Parse(String.Concat(digits.OrderBy(c => c)));
       return high - low;
