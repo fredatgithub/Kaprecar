@@ -10,16 +10,16 @@ namespace Kaprekar5
       Console.WriteLine("Nombre  | Constante | Étapes");
       Console.WriteLine("-----------------------------");
 
-      for (int n = 12_345; n <= 98_765; n++)
+      for (int number = 12_345; number <= 98_765; number++)
       {
         // Vérifie que les 4 chiffres sont tous différents
-        if (!AllDigitsUnique(n))
+        if (!AllDigitsUnique(number))
         {
           continue;
         }
 
-        int constant = GetKaprekarConstant(n, out int steps);
-        Console.WriteLine($"{n:D5}   | {constant}     | {steps}");
+        int constant = GetKaprekarConstant(number, out int steps);
+        Console.WriteLine($"{number:D5}   | {constant}     | {steps}");
       }
 
       Console.WriteLine("\nTerminé. Appuyez sur une touche pour fermer la fenêtre.");
@@ -29,10 +29,10 @@ namespace Kaprekar5
     /// <summary>
     /// Vérifie si les 4 chiffres d’un nombre sont tous différents.
     /// </summary>
-    static bool AllDigitsUnique(int n)
+    static bool AllDigitsUnique(int number)
     {
-      string s = n.ToString("D5");
-      return s.Distinct().Count() == 5;
+      string numberAsString = number.ToString("D5");
+      return numberAsString.Distinct().Count() == 5;
     }
 
     /// <summary>
